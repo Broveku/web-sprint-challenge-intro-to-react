@@ -9,7 +9,7 @@ const StyledCharacter = styled.div`
     position:center;
     padding:10px;
     margin-bottom:10px;
-    border: black;
+    border-radius: 10px;
 
     p{
         font-size:2rem;
@@ -25,6 +25,7 @@ const StyledDetails = styled.div`
     color:red;
     background-color:black;
     padding: 10px;
+    border-radius:10px;
     
 
 `

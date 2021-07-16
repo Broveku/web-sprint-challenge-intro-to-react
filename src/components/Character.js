@@ -5,14 +5,15 @@ import axios from 'axios'
 import styled from 'styled-components'
 
 const StyledCharacter = styled.div`
-    background-color:;
+    background-color:grey;
     position:center;
     padding:10px;
     margin-bottom:10px;
-    
+    border: black;
 
-    
-    
+    p{
+        font-size:2rem;
+    }
     button{
         margin-left:10%;
     }
@@ -23,8 +24,7 @@ const StyledCharacter = styled.div`
 const StyledDetails = styled.div`
     color:red;
     background-color:black;
-    padding: 10px
-    display:flex;
+    padding: 10px;
     
 
 `
@@ -36,20 +36,13 @@ export default function Character({info}){
     
     const [detailsOpen, setDetailsOpen] = useState(false)
 
-    // const = id => {
-    //   setDetailsOpen(id)
-    // }
-    
-    // const  = () =>{
-    //   setDetailsOpen(null)
-    // }  
     
     
     
     return(
         
     <StyledCharacter>
-            {info.name}
+            <p>{info.name}</p>
             <button onClick={() => setDetailsOpen(!detailsOpen)}>
                 Details
             </button>
